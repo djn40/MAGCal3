@@ -1,0 +1,7 @@
+<H2>An Error Has Been Encountered</H2>
+Sorry about this but an error has occured and we are unable to continue with your current session of "My Accessible Google". The error information folows. If this happens again then please <A HREF="../contact.html">contact us</A> and explain what happened. Hopefully we will be able to fix any problems with our code or if it is an issue with Google, we will raise a bug on your behalf.
+
+<H3>The error message is:</H3>
+%TAG_DMS_GET_FIELD=ERR_STR%"
+<P>
+Please <A HREF="./index.py">click here to return to the My Accessible Google Front Page.</A>

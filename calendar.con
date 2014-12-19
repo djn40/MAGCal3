@@ -1,0 +1,29 @@
+<DIV ID="Query">
+%TAG_DMS_INCLUDE=calendar_query.unk%
+<DIV CLASS="clear"></DIV>
+</DIV>
+<DIV ID= "msg_str"> %TAG_DMS_GET_FIELD=Msg_Str% 
+<br>
+%dz_gfv=DebugMsg%</DIV>
+<DIV ID="Entries">	
+%TAG_DMS_GET_FIELD=No_Entries%
+<UL CLASS="DaysOfEvents">
+	%TAG_DMS_INCLUDEMULTI=calendar_days.unk,DayList%
+</UL>
+</DIV>
+
+<DIV ID="QuickEntry">
+<H2>Quick Calendar Entry</H2>
+You can type in plain english a simple calendar entry and it will be added to your calendar. An example is "Lunch tomorrow with Larry 12pm" or "goalball competition 7 July 2pm to 5pm".
+<FORM METHOD=POST ACTION="mag_calendar.py?DoQuickEntry=1">
+<INPUT TYPE="TEXT" NAME="QuickEntryDets" SIZE="100" TITLE = "Input your quick entry" ACCESSKEY="9" >
+<INPUT TYPE="Submit" NAME="SubmitQuickEntry" VALUE="Add Quick Entry" ID="SubmitQuickEntry">
+</FORM>
+</DIV>
+<DIV ID="FinalLinks">
+<UL>
+	<LI> <A CLASS="bolded" HREF="AddCalEntry.py">Add Full Entry</A>
+	<LI> <A CLASS="bolded" HREF="cal_change.py">Other / Multiple Calendars</A>
+	<LI> <A CLASS="bolded" HREF="index.py?DoGoogleLogout=1">Logout</A>
+</UL>
+</DIV>

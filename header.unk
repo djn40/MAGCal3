@@ -1,0 +1,39 @@
+	<!-- header -->
+
+<DIV ID="Header_Content">
+
+<SPAN ID="Header_Title">
+	<IMG SRC="../images/PovidiLogo160.gif" ALT="Povidi Logo">
+	My Accessible Google Calendar<BR>
+	</SPAN>
+
+
+<DIV ID="header_links">
+
+<UL>
+				<LI><A CLASS="SkipLink" HREF="#Main_Content" ACCESSKEY="0">Skip to Main Content</A>&nbsp
+		<LI><A HREF="mag_calendar.py" ACCESSKEY="1">Calendar</A>&nbsp
+
+		<LI><A HREF="http://www.povidi.com/YourTube/" >YourTube</A>&nbsp
+
+		<LI><A HREF="../index.html" ACCESSKEY="2">Povidi Home</A>&nbsp
+
+		<LI><A HREF="./about.py" >About</A>&nbsp
+
+		<LI><A HREF="./faq.py" ">FAQ</A>&nbsp
+
+		<LI><A HREF="../contact.html" ACCESSKEY="3">Contact</A>&nbsp
+
+		<LI><A HREF="../accessibility.html">Accessibility 
+		Statement</A>&nbsp
+	</UL>
+</DIV>
+</DIV>
+	
+	<DIV	ID="colours">
+
+		<P CLASS="col_title">Alternate Colors<BR>
+		<A CLASS="col_wb"; HREF = "javascript:document.cookie='colour=1  ';document.location.reload();" >White on Black</A><BR>
+			<A CLASS="col_bw"; HREF = "javascript:document.cookie='colour=2  ';document.location.reload();" >Black on White</A><BR>
+				<A CLASS="col_std"; HREF = "javascript:document.cookie='colour=0  ';document.location.reload();" >Standard</A>
+	</DIV>

@@ -1,0 +1,19 @@
+<H1 ID="gen_mc">Welcome to My Accessible Google</H1>
+<A ID="google_link2" HREF="%TAG_DMS_GET_FIELD=GOOGLEURL%" ID="Login_Link">Login now</A> or read on for more information.
+
+Hi and welcome. Povidi is proud to introduce you to My Accessible Google, a series of web applications that make using the Google applications simpler for blind and visually impaired computer users.<BR>
+
+Our first offering is Google Calendar which up till now has been next to impossible to use. Currently we are offering you the chance to access your Google Calendar (you will need to have a google account and can <A HREF="https://www.google.com/accounts/NewAccount">sign up here</A>). If you already have a gmail or google account but have never used the calendar you will need to <A HREF="https://www.google.com/accounts/NewServiceAccount?service=cl&continue=http://www.google.com/calendar/render&followup=http://www.google.com/calendar/render" TARGET="_blank">login and register to use the calendar</A> before we can access it (link opens a new page).
+This first implementation will allow access to your primary calendar only but you can always <A HREF="../contact.html">contact us</A> if you would like this extended to other calendars. If you have a gmail account, login and go to the calendar link to ensure that you have registered before continuing here, you must have a valid calendar before we can allow access.
+
+<H2>How it Works</H2>
+Before you can use Povidi's My Accessible Google (MAG for short), you will need to have a google account and then grant our series of applications the right to access your google account behind the scenes in order to get to your data. Povidi does not store this data, nor once you are logged in even know who you are. We use a secret coded token for the life of your session with us and then once you exit your browser we maintain no details. All our code does is to simply rearrange your data into a more accessible form without us having to even look at it!
+<P>
+Each time you want to use My Accessible Google you will need to click on the "Use My Accessible Google" link at the bottom of this page which will then send you off to google to login to your account. Once you have provided your login details Google will ask you whether you would like to grant permission for us to be able to talk to them and access your data for you. If you agree then you will be brought back to us and you will be able to start to get to your google data in a much simpler and cleaner fashion.
+<BR>Once you are comfortable with the programs you may want to change your browser so that cookies from Povidi are not destroyed each time you exit your browser and in this case we will be able to skip the login process for you and take you straight into My Accessible Google.
+<P>
+So feel free to give it a try and if you find the experience a good one would love you to <A HREF="../contact.html">tell us</A> and <A HREF="https://services.google.com/fb/forms/accessibilityfeedback/">Google too,</A> we would love to work with them.
+<P>
+
+<A ID="google_link1" HREF="%TAG_DMS_GET_FIELD=GOOGLEURL%" ID="Login_Link">Use My Accessible Google</A>
+

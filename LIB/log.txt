@@ -1,0 +1,1 @@
+Set-Cookie: calendarData="{}"; expires=Thu, 15-Jan-2015 18:16:36 PST

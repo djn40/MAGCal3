@@ -1,0 +1,7 @@
+<LI><H2>%TAG_DMS_GET_FIELD=dow%, %TAG_DMS_GET_FIELD=mthstr%
+%TAG_DMS_GET_FIELD=day%
+%TAG_DMS_GET_FIELD=yr% </H2>
+<UL ID="EventList">
+%TAG_DMS_INCLUDEMULTI=calendar_events.unk,Events%
+
+</UL>

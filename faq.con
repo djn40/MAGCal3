@@ -1,0 +1,29 @@
+<H1>Frequently Asked Questions</H1>
+
+As My Accessible Google Calendar is still very new, there are not a lot of questions so far, so go ahead and <A HREF="../contact.html">ask one!</A>
+
+<H2>Questions</H2>
+<UL ID="faq_list">
+	<LI> <A HREF="#01">From what platforms can I access My Accessible Google?</A>
+	<LI> <A HREF="02">What browser and what settings do I need?</A>
+	<LI> <A HREF="03">Why do I need to login to google each time I use My Accessible Google?</A>
+	<LI> <A HREF="04">How secure is my google data?</A>
+</UL>
+
+<H2>Ansers</H2>
+
+<H4<A NAME="01"></A>From what platforms can I access My Accessible Google?</H4>
+Whatever has a standards compliant browser. You will need "cookies" (they allow us to maintain secure encrypted information behind the scenes that allows us to communicate with google). This means your iPhone, Mac, PC, Mobile phone or whatever device you use to access the World Wide Web. Having javascript turned on will also make the experience nicer.
+
+<H4><A NAME="02">What browser and what settings do I need?</A></H4>
+As long as your browser allows "cookies" and this is enabled within your browser, it is entirely up to you. My Accessible Google has been designed using modern web technology, that allows for backward compatibility as well as thought through accessible layout. As mention before, session cookies must be enable, and having javascript turned on will also make the experience a lot better. If your browser allows for session bookies only but you can have exceptions to this, then once you are comfortable, adding povidi.com to the list of sites which allow for longer term cookies would mean you would not need to authenticate with google each time you start your browser.
+
+<H4><A NAME="03">Why do I need to login to google each time I use My Accessible Google?</A></H4>
+Each time you login and authenticate us, and allow your data to be presented through the "My Accessible Google" presentation method, we maintain a connection with Google via a secure "token". When you exit your browser one of two things can happen depending on your browser settings. Firstly, the secure encrypted token is destroyed. This occurs if you only allow session cookies. The second option is that the cookie information is not destroyed. In this case we will be able to reconnect straight away to your applications without having to reconnect. After 30 days our secure cookie will need to be reconfirmed if not before. It is your decision as to which approach you would like to implement.
+
+<H4><A NAME="04">How secure is my google data?</A></H4>
+There are 3 aspects to security you need to be aware of. Firstly your information and us at Povidi, secondly the transmission of your information, and thirdly access by others. <BR>
+On the first point, we at Povidi talk to google (and your account with them) via a secure token issued by Google. This token information is stored by your browser and never by us. We do look at this token whenever you request information from Google, and pass it onto them. We never store it at our server, and in fact never even know your gmail account name. We could if we were criminals or nasty people revoke and "cheat". However we are not and believe our reputation supports this. You grant Povidi a trust so that we can make your web world more accessible. We understand this responsibility and behave appropriately. If at any time Povidi makes commercial gain out of My Accessible Google, be it advertising, grants or subscription we will ensure you know.<BR>
+As to the second point as to transimission of your data from Google to us and then onto you, transmissions between us and Google are within their guidelines and are no different than between yourself and many other vendors on the internet.<BR>
+The third and final point being access by others is more complex but we believe we have taken steps that many other websites do not. All important cookie information is stored in an industrial strenth encrypttion method. This should help in keeping your information on your local machine as safe as is possible. The rest of the issue is within your responsibility. Ensure you have up to date virus amd malware protection and that this software is run regularly. Povidi has similar protection on its servers and ensures on a regular basis that the website has not been comporomised. It is the wild west out there and we do our best, we believe you need to consider and do the same.
+

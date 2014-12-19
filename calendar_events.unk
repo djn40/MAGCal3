@@ -1,0 +1,10 @@
+<LI><H3 CLASS="EventText"><TABLE CLASS="entry_tb"><COL CLASS="entry_col1"><COL CLASS="entry_col2">
+<TR>
+<TD CLASS="entry_dt"> %TAG_DMS_GET_FIELD=ShortDtTime%</TD>
+<TD CLASS="entry_summ">%TAG_DMS_GET_FIELD=EntrySumm%
+&nbsp <A HREF="./mag_calendar.py?DelCalEvent=%TAG_DMS_GET_FIELD=EventID%">Delete</A> &nbsp
+%dz_if=ParentDelUID% 
+<A HREF="./mag_calendar.py?DelCalEvent=%dz_gfv=ParentDelUID%">Delete Series</A>
+%dz_endif%
+</TD>
+</TR></TABLE></H3>

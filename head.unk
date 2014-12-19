@@ -1,0 +1,38 @@
+    <LINK rel="home" title="Home" href="index.html">
+	    <TITLE> %TAG_DMS_SB_META_TITLE%   </TITLE>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+    <META NAME="Copyright" CONTENT="Copyright (c) Povidi NZ Ltd 2008 - 2011">
+	<META NAME="Author" CONTENT="Darryl Sherwood">
+	<META NAME="keywords" CONTENT="Blindness navigation,blindness orientation, GPS navigation, GPS orientation, disability blindness, macular degeneration, retinitas pigmentosa, glaucoma, Diabetic Retinopathy, aids for the blind, products for the blind, assisstive technology, blind disabled, white cane, SoundPost, Povidi, accessible software, accessible google apps">
+	<link rel="stylesheet" href="../screen.css" type="text/css" media="screen, projection">
+<meta name="verify-v1" content="4iGArkss37zddab9cZz04yJcpgmGTY4C9K3JC3oIDWE=" />
+<link rel="stylesheet" href="../print.css" type="text/css" media="print"> 
+<!--[if IE]>
+  <link rel="stylesheet" href="../ie.css" type="text/css" media="screen, projection">
+<![endif]-->
+
+	<SCRIPT LANGUAGE="JavaScript">
+	<!--
+		function get_cookie_val ( cookie_name )
+		{
+		  var results = document.cookie.match ( cookie_name + '=(.*?)(;|$)' );
+		  if ( results )
+			return ( unescape ( results[1] ) );
+		  else
+			return null;
+		}
+
+	//-->
+	</SCRIPT>
+
+	<SCRIPT LANGUAGE="JavaScript">
+	<!--
+	colour_val = get_cookie_val ( "colour" );
+	if ( colour_val == null || colour_val == '0') 
+			document.write ( '<LINK href="main.css" rel="stylesheet" type="text/css">' );
+	if ( colour_val == "1") 
+			document.write ( '<LINK href="main_wb.css" rel="stylesheet" type="text/css">' );
+	if ( colour_val == "2") 
+			document.write ( '<LINK href="main_bw.css" rel="stylesheet" type="text/css">' );
+	//-->
+	</SCRIPT>

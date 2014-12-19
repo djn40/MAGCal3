@@ -1,0 +1,230 @@
+
+* {margin:0;padding:0;} 
+html,body 		{
+		margin:		0em;
+		padding:	0em;
+		height:		100%;
+		font-family:	 "Tiresias", "Verdana", "Lucida", "Arial", "Geneva", "Helvetica", sans-serif;
+		background: darkblue;
+		font-size:	100%;
+		color:	white;
+}
+
+a {color: yellow;}
+  a:visited {color: lime;}
+
+
+#container{
+	margin-bottom: 0.0em;
+	min-height: 100%;
+	position: relative;
+}
+
+#MainContent{
+	padding-bottom: 2.8em;
+	min-height: 100%;
+	overflow:auto;	 
+}
+
+
+#MainContent h1 { font-size: 160%; font-weight: bold; }
+#MainContent h2 { font-size: 145%; font-weight: bold; }
+#MainContent h3 { font-size: 130%; font-weight: bold; }
+
+h1,h2,h3,h4,h5,h6 {	color: white; text-align: left;}
+
+
+#Header {
+	width: 100%;
+	max-width: 100%;
+	background: dodgerblue;
+	padding-left: 0em;
+	padding-right: 0em;
+	padding-bottom: 0em;
+}
+
+#Header_Content {
+	width: 82%;
+	max_width: 82%;
+	float: left;
+}
+
+
+.SkipLink {
+	font-size: 0em;
+	width: 0em;
+	color: dodgerblue;
+}
+
+#Header img {	float: left;}
+
+#Header_Title {
+	font-size: 145%;
+	font-weight: bold;
+	}
+
+#header_links li{
+	display: inline; 
+	list-style-type: none;
+	background: dodgerblue;
+}
+
+#header_links {
+	font-size: 90%;
+	text-align: center;
+	font-weight: bold;
+	width: 100%;
+	background: dodgerblue;
+}
+
+#header_links a {
+	color: white;
+	font-weight: bold;
+}
+
+#header_links a.visited {colour: yellow;}
+
+
+#colours {
+	max-width: 14%;
+	width: 14%;
+	margin-left: 82%;
+	margin-right: 0.5em;
+	background: red;
+	color: white;
+	font-size: 85%;
+	border-color: gold;
+	border-width: 0.2em;
+	border-style: groove;
+	border-top-width: 0em;
+	border-left-width: 0em;
+	text-align: right;
+	padding-right: 0.5em;
+	padding-left: 0.0.3em;
+	padding-bottom: 0em;
+}	
+
+
+.container {width: 100%;}
+
+#Query {width: 100%; display: clear: both; display: block}
+#Query h2 {font-weight: bold; font-size: 145%;}
+#Query h3 {font-weight: bold; font-size: 130%;}
+
+
+#Query_Quick {
+	border-style: solid;
+	border-width: 0.2em;
+	border-color: white;
+	border-top: none;
+	border-left: none;
+	width: 36%;
+	padding-left: 2em;
+	padding-bottom: 0.8em;
+	margin-right: 1em;
+	float: left;
+	display: inline;
+}
+
+
+#Query_Std {
+	padding-left: 0em;
+	padding-bottom: 1em;
+	width: 55%;
+	max-width: 55%;
+	margin-left: 35%;
+	text-align: left;
+}
+
+#Query_Std h3{	display: inline; }
+#Query_Quick h3 {	display: inline; }
+.clear {	clear: both;}
+
+#msg_str {	padding-bottom: 0em; clear:both;}
+#msg_str h2{ font-size: 140%; font-weight: bold;}
+#msg_str h3{ font-size: 125%; font-weight: bold; padding: 0em;}
+
+#Entries {padding-top: 0em;}
+#Entries ul{ 	list-style: none;}
+
+#Entries h2 {font-size: 125%; font-weight: bold; padding: 0em;}
+																			 
+#EventList li{	margin-top: 0em;}
+
+.EventText{
+	font-size: 100%;
+	margin-top: 0em;
+	margin-bottom: 0.5em;
+}
+
+.entry_col1{ width: 15em;}
+
+#QuickEntry h2 {font-weight: bold; font-size: 140%}
+
+#FinalLinks {
+	text-align: center;
+}
+
+#FinalLinks li{
+	display: inline; 
+	list-style-type: none;
+}
+
+.bolded{
+	font-weight: bold;
+}
+
+#footer {
+	background: dodgerblue;
+	color : white;
+	font-size: 8pt;
+	text-align: center;
+	font-style: italic;
+	height: 2.5em;
+	margin-top: -2.8em;
+	padding-top: .3em;
+	position: relative;
+}
+
+
+// ===============
+UL.ul_side {
+	margin-left: 0%;
+//	padding-left: 0.4em;
+}
+
+H1.co_name {
+	font-family:	Franklin Gothic Medium,  Verdana, Arial;
+	font-size: 150%;
+}
+
+a.col_wb{
+	background: black;
+	color: white;
+}
+
+a.col_wb:visited {
+	color; lime;
+}
+
+a.col_bw{
+	background: white;
+		color: black;
+}
+
+a.col_bw:visited{
+	color: green;
+}
+
+a.col_std {
+	background: darkblue;
+	color: yellow;
+}
+a.col_std:visited {
+	color: aqua;
+}
+
+.BottomAlign {
+	vertical-align : baseline;
+}
+
