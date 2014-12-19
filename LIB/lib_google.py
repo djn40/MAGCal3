@@ -95,7 +95,7 @@ def BasicEventDataToDic ( event, cso=None, calid=None ):
 		a= cso.events().get( calendarId='primary', eventId=ret["ParentID"] )
 		a=a.execute()
 		ret["ParentDelUID"] = a["id"]
-		log("result is "+str(ret["ParentDelUID"] == ret["EventID"]))
+		#log("result is "+str(ret["ParentDelUID"] == ret["EventID"]))
 	ret["GuiSDate"] = GuiDateTimes( ret["Google_SDate"] )
 	ret["GuiEDate"] = GuiDateTimes( ret["Google_EDate"] )
 	ret["ShortDtTime"] = "%s	 %s %s - %s" % ( ret["GuiSDate"]["mthstr"], ret["GuiSDate"]["day"], ret["GuiSDate"]["timestr"], ret["GuiEDate"]["timestr"] )
@@ -143,7 +143,7 @@ def GetEvents( cso,  sdt_str, edt_str, ctz, calid="default" ):
 	#log(feed)
 	dates_list=[]
 	for event in feed:
-		writeJSON(event)
+		#writeJSON(event)
 		d = BasicEventDataToDic ( event, cso, calid )
 		if d != None:
 			found = False
