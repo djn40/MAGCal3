@@ -9,8 +9,8 @@ from oauth2client.client import flow_from_clientsecrets
 
 
 if sys.platform == 'win32':
-	gblGoogleReturnAddress  = "http://localhost/dev/povidi/site/mag/google_return.py"
-	gblRefreshAddress  = "http://localhost/dev/povidi/site/mag/mag_calendar.py"
+	gblGoogleReturnAddress  = "http://localhost/mag/google_return.py"
+	gblRefreshAddress  = "http://localhost/mag/mag_calendar.py"
 else:
 	gblGoogleReturnAddress  = "http://povidi.com/mag/google_return.py"
 	gblRefreshAddress  = "http://povidi.com/mag/mag_calendar.py"
@@ -193,8 +193,8 @@ def main( dets ):
 
 	elif dets.has_key("DelCalEvent" ):
 		DoDelCalEvent( cso, dets )
-		#DoLastCookieQuery ( cd, cso,PyToday, ctz, CurrCal )
-		main_pages["calendar"]["DayList"] = lib_google.DoQuickPick( cso, "Today", PyToday, ctz, CurrCal)
+		DoLastCookieQuery ( cd, cso,PyToday, ctz, CurrCal )
+		#main_pages["calendar"]["DayList"] = lib_google.DoQuickPick( cso, "Today", PyToday, ctz, CurrCal)
 
 	else:
 		ShowCalendar(cd , cso)

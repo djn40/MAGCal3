@@ -12,6 +12,25 @@ import lib_cal_datetime
 
 def uri_info ( calid ):
 	return "/calendar/feeds/"+calid+"/private/full"
+counter = 0
+
+def writeJSON(json):
+	global counter
+	f=open(r"c:\wamp\www\json\%s.json" %(str(counter)), "w")
+	f.write(jformat(json))
+	f.close()
+	counter+=1
+def jformat(json):
+	l=[]
+	for k in json:
+		l.append(k+": "+str(json.get(k)))
+	return "\n".join(l)
+
+def log(t):
+	f=open("c:\wamp\www\mag\log.txt", "a")
+	f.write(str(t))
+	f.write("\n")
+	f.close()
 
 
 
@@ -62,8 +81,10 @@ def BasicEventDataToDic ( event, cso=None, calid=None ):
 		ret["Google_SDate"] = "2014-02-23T00:00:00+00:00"
 		ret["Google_EDate"] = "2014-02-23T00:00:00+00:00"
 	else:
-		ret["Google_SDate"] = event["start"].get('date', "2014-02-23T00:00:00+00:00")
-		ret["Google_EDate"] = event["end"].get("date", "2034-02-23T00:00:00+00:00")
+		
+		ret["Google_SDate"] = event["start"].get('date', event["start"].get('dateTime', None))
+		ret["Google_EDate"] = event["end"].get('date', event["end"].get('dateTime', None))
+
 	ret["Title"] = event.get("summary")
 	ret["Summary"] = event.get("description")
 	ret["Where"] = event.get("location")
@@ -74,6 +95,7 @@ def BasicEventDataToDic ( event, cso=None, calid=None ):
 		a= cso.events().get( calendarId='primary', eventId=ret["ParentID"] )
 		a=a.execute()
 		ret["ParentDelUID"] = a["id"]
+		log("result is "+str(ret["ParentDelUID"] == ret["EventID"]))
 	ret["GuiSDate"] = GuiDateTimes( ret["Google_SDate"] )
 	ret["GuiEDate"] = GuiDateTimes( ret["Google_EDate"] )
 	ret["ShortDtTime"] = "%s	 %s %s - %s" % ( ret["GuiSDate"]["mthstr"], ret["GuiSDate"]["day"], ret["GuiSDate"]["timestr"], ret["GuiEDate"]["timestr"] )
@@ -102,7 +124,6 @@ def getEventsBetween(cso, std, edt_str, ctz, calid="primary"):
 		request = cso.events().list_next(request, response)
 	return eventList
 
-
 def GetEvents( cso,  sdt_str, edt_str, ctz, calid="default" ):
 	#StartDate_str="2011-04-07T02:30:00-07:00" #UTC I think
 	StartDate_str="%sT00:00:00%s" % (sdt_str, ctz) #UTC NOT GMT
@@ -119,8 +140,10 @@ def GetEvents( cso,  sdt_str, edt_str, ctz, calid="default" ):
 	#print "Content-Type: text/html"
 	#print
 	#print "\n".join([str(i) for i in feed])
+	#log(feed)
 	dates_list=[]
 	for event in feed:
+		writeJSON(event)
 		d = BasicEventDataToDic ( event, cso, calid )
 		if d != None:
 			found = False
@@ -161,7 +184,6 @@ def GetEvents( cso,  sdt_str, edt_str, ctz, calid="default" ):
 
 def DeleteEvent(cso, event_id):
 	return cso.events().delete(calendarId='primary', eventId=event_id).execute()
-	#return cso.DeleteEvent( event_id )
 
 
 def DoQuickPick ( cso, QP_Param, today, ctz, calid="default"):
@@ -174,7 +196,8 @@ def DoQuickPick ( cso, QP_Param, today, ctz, calid="default"):
 
 def DoLogout ( creds ):
 	if creds != None:
-		return creds.revoke(httplib2.Http())
+		return creds.revoke(creds.authorize(httplib2.Http()))
+		MAGCookie.ExpireCookies()
 	return True
 
 
